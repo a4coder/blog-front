@@ -158,23 +158,64 @@ body {
     margin: 5px auto;
   }
 
-  #blogs #blogs-container {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-direction: column;
-  }
-
   #blogs-container .blog-box {
-    width: 50%;
-    background-color: white;
-    border-radius: 7px;
-    padding: 10px;
-    border: 1px solid var(--border);
-    box-shadow: var(--boxshadow);
+    width: 80%;
+    margin: 15px auto;
   }
 
-  /* / / / blugs section / / /  */
+  /* / / / about section / / /  */
 
+  #about {
+    padding: 50px;
+  }
 
+  #about .about-header h2 {
+    font-size: 1.75rem;
+  }
+
+  #about .about-caption {
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    padding-bottom: 20px;
+  }
+
+  .about-container {
+    display: none;
+  }
+
+  /* / / / newblog / / /  */
+
+  #newblog .form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #newblog select {
+    margin-bottom: 25px;
+  }
+
+  #newblog textarea {
+    width: 82%;
+    padding: 15px;
+    margin: auto;
+  }
+  /* / / / footer section / / / */
+  #footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #footer .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #footer .columns .col {
+    flex-basis: 50%;
+    padding: 10px;
+  }
 }

@@ -263,6 +263,7 @@
   padding: 10px;
   border: 1px solid var(--border);
   box-shadow: var(--boxshadow);
+  transition: 300ms;
 }
 
 #blogs-container .blog-box:hover {
@@ -333,6 +334,7 @@
 
 #about {
   padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   background-image: url(../image/bg-world.jpg);
   background-position: center;
@@ -375,12 +377,14 @@
 .about-container .mission-body {
   padding: 0 10px 10px 10px;
 }
-.about-container .mission-body h2,
-p {
-  padding: 10px;
+
+.about-container .mission-body h2 {
+  font-weight: 500;
 }
 
-.about-container .mission-body p {
+.about-container .mission-body h2,
+p {
+  padding: 5px;
   text-align: right;
 }
 
@@ -397,6 +401,11 @@ p {
 #newblog .newblog-header h2 {
   font-weight: 500;
   font-size: 2.75rem;
+}
+
+#newblog p {
+  text-align: center;
+  padding: 15px;
 }
 
 #newblog .form-box {
@@ -440,6 +449,7 @@ p {
   box-shadow: var(--boxshadow);
   font-size: 1rem;
   border-radius: 7px;
+  padding: 15px;
   font-family: IranSans;
 }
 
