@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "IranSans";
+  font-weight: 200;
+  src: url("../font/IRANSansWeb200.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IranSans";
+  font-weight: 300;
+  src: url("../font/IRANSansWeb300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IranSans";
+  font-weight: 400;
+  src: url("../font/IRANSansWeb400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IranSans";
+  font-weight: 500;
+  src: url("../font/IRANSansWeb500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IranSans";
+  font-weight: 600;
+  src: url("../font/IRANSansWeb600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IranSans";
+  font-weight: 900;
+  src: url("../font/IRANSansWeb900.woff") format("woff");
+}
+
+:root {
+  --primary--color: #ea947a;
+  --secondary--color: #faf2e9;
+  --hover: #d4603d;
+  --border: #e5dec1;
+  --border--hover: #cfc7a8;
+  --boxshadow: 0 0 7px #a2a09642;
+  --boxshadow--hover: 0 0 17px rgba(152, 150, 140, 0.269);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: IranSans;
+  font-size: 16px;
+}
+
+.padding-x {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.margin-t {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .padding-x {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .margin-t {
+    margin-top: 30px;
+  }
+
+  /*/ / /  nav section / / /*/
+
+  #nav {
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  #nav #menu {
+    position: absolute;
+    background-color: rgba(110, 110, 110, 0.95);
+    top: 0;
+    right: -250px;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    padding: 30px;
+    justify-content: flex-start;
+  }
+
+  #nav #menu .close-menu {
+    display: block;
+  }
+
+  #scroll-down {
+    display: none;
+  }
+
+  #nav button.open-menu {
+    display: block;
+  }
+
+  #nav #menu button {
+    display: block;
+  }
+
+  /*/ / /  header section / / /*/
+
+  #hero .wellcome h1 {
+    font-weight: 500;
+    font-size: 1.75rem;
+  }
+
+  /*/ / /  feature section / / /*/
+
+  #feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #feature .feature-box {
+    flex-basis: 40%;
+  }
+  #feature .feature-box3 {
+    display: none;
+  }
+
+  /* / / / blugs section / / /  */
+
+  #blogs h2 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  #blogs ul {
+    margin: auto;
+    display: block;
+    padding: 30px 0;
+  }
+
+  #blogs ul li {
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  #blogs #blogs-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+  }
+
+  #blogs-container .blog-box {
+    width: 50%;
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    box-shadow: var(--boxshadow);
+  }
+
+  /* / / / blugs section / / /  */
+
+
+}

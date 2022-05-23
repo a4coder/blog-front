@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>home page</title>
+</head>
+
+<body>
+    <nav id="nav" class="padding-x" id="hero">
+        <button class="open-menu"><i class="fas fa-bars"></i></button>
+        <ul id="menu">
+            <li class="close-menu"><b><i style="color: var(--primary--color); font-size: 1.5rem; margin-bottom: 15px;" class="fas fa-close"></i></b></li>
+            <li><b><a href="#nav">بلاگر</a></b></li>
+            <li><a href="#nav">خانه</a></li>
+            <li><a href="#blogs">بلاگ ها</a></li>
+            <li><a href="#newblog">ساخت بلاگ</a></li>
+            <li><a href="#about">درباره ما</a></li>
+        </ul>
+        <button id="login">ورود به پنل <i class='fas fa-user'></i></button>
+    </nav>
+
+    <header class="padding-x" id="hero">
+        <div class="cover-background"></div>
+        <div class="wellcome">
+            <h1>به بلاگر خوش اومدی</h1>
+            <p>نشریه اینترنتی خودت رو در کمتر از 1 دقیقه درست کن</p>
+        </div>
+        <button>اطلاعات بیشتر</button>
+        <a id="scroll-down" href="#feature">
+            <div class="scroll-down"></div>
+        </a>
+    </header>
+
+    <main>
+        <section id="feature" class="padding-x margin-t">
+            <div class="feature-box">
+                <div class="feature-header">
+                    <img src="./image/feature/feature1.jpg" alt="">
+                </div>
+                <div class="feature-body">
+                    <p>نشریه اینترنتی</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-header">
+                    <img src="./image/feature/feature2.jpg" alt="">
+                </div>
+                <div class="feature-body">
+                    <p>نشریه اینترنتی</p>
+                </div>
+            </div>
+
+            <div class="feature-box feature-box3">
+                <div class="feature-header">
+                    <img src="./image/feature/feature3.jpg" width="100px" alt="">
+                </div>
+                <div class="feature-body">
+                    <p>نشریه اینترنتی</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blogs" class="padding-x margin-t">
+            <div id="blogs-header">
+                <h2>بلاگ ها</h1>
+            </div>
+            <ul id="blogs-filter">
+                <li class="filter-active" data-filter="*">همه</li>
+                <li data-filter=".programming">برنامه نویسی</li>
+                <li data-filter=".skill">آموزش فنی</li>
+                <li data-filter=".technology">تکنولوژی</li>
+            </ul>
+            <div id="blogs-container">
+                <div class="blog-box programming">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#برنامه نویسی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box programming">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#برنامه نویسی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box skill">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#آموزشی فنی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box technology">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#تکنولوژی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box skill">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#آموزشی فنی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box programming">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#برنامه نویسی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box skill">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#آموزشی فنی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box technology">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#تکنولوژی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box technology">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#تکنولوژی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box programming">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#برنامه نویسی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box skill">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#آموزشی فنی</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box technology">
+                    <div class="blog-card">
+                        <div class="card-body">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز...</p>
+                        </div>
+                        <div class="card-caption">
+                            <p>نویسنده: <a href="#">کاربر 1</a></p>
+                            <span>#تکنولوژی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="padding-x margin-t">
+            <div class="faq-header">
+                <h2>سوالات متداول</h2>
+            </div>
+            <div class="faq-box">
+                <div class="faq-question">چگونه می توانم وبلاگ بنویسم ؟</div>
+                <div class="faq-answer faq-answer-hidden">از منو بالا روی زیر منو ساخت وبلاگ کلیک کنید و بعد ...</div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-question">چگونه می توانم وبلاگ بنویسم ؟</div>
+                <div class="faq-answer faq-answer-hidden">از منو بالا روی زیر منو ساخت وبلاگ کلیک کنید و بعد ...</div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-question">چگونه می توانم وبلاگ بنویسم ؟</div>
+                <div class="faq-answer faq-answer-hidden">از منو بالا روی زیر منو ساخت وبلاگ کلیک کنید و بعد ...</div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-question">چگونه می توانم وبلاگ بنویسم ؟</div>
+                <div class="faq-answer faq-answer-hidden">از منو بالا روی زیر منو ساخت وبلاگ کلیک کنید و بعد ...</div>
+            </div>
+        </section>
+
+        <section id="about" class="margin-t padding-x">
+            <div class="about-header">
+                <h2>درباره ما</h2>
+            </div>
+            <div class="about-caption">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز...
+            </div>
+            <div class="about-container">
+                <div class="about-mission">
+                    <div class="mission-header">
+                        <img src="./image/feature/feature1.jpg" alt="">
+                    </div>
+                    <div class="mission-body">
+                        <h2>ماموریت 1</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+                <div class="about-mission">
+                    <div class="mission-header">
+                        <img src="./image/feature/feature2.jpg" alt="">
+                    </div>
+                    <div class="mission-body">
+                        <h2>ماموریت 1</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+                <div class="about-mission">
+                    <div class="mission-header">
+                        <img src="./image/feature/feature3.jpg" alt="">
+                    </div>
+                    <div class="mission-body">
+                        <h2>ماموریت 1</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newblog" class="margin-t padding-x">
+            <div class="newblog-header">
+                <h2>ثبت بلاگ جدید</h2>
+                <p>در این قسمت می توانید یک بلاگ جدید ثبت کنید</p>
+            </div>
+            <div class="newblog-container">
+                <form action="#" id="form">
+                    <div class="form-box">
+                        <div class="input-box">
+                            <div>
+                                <label for="name">
+                                    نام:
+                                </label>
+                                <input id="input-name" name="name" type="text" required>
+                            </div>
+                            <div>
+                                <label for="email">
+                                    ایمیل:
+                                </label>
+                                <input id="input-email" name="email" type="email" required>
+                            </div>
+                            <label for="subject">موضوع بلاگ:</label>
+                            <select id="subject" required>
+                                <option value="programming">برنامه نویسی</option>
+                                <option value="skill">مهارت فنی</option>
+                                <option value="technology">تکنولوژی</option>
+                            </select>
+                        </div>
+                        <textarea name="comment" id="newblog-comment" rows="7"></textarea>
+                    </div>
+                    <button type="submit">ثبت بلاگ</button>
+                </form>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br>
+    </main>
+
+    <footer id="footer" class="padding-x">
+        <div class="footer-container">
+            <div class="columns">
+                <div class="col">
+                    <b>خبر نامه:</b>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز...</p>
+                    <input type="text">
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><b><a href="#">بلاگر</a></b></li>
+                        <li><a href="#">صفحه اصلی</a></li>
+                        <li><a href="#">بلاگ ها</a></li>
+                        <li><a href="#">ساخت بلاگ</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><b>پیوند های مفید</b></li>
+                        <li><a href="#">صفحه اصلی</a></li>
+                        <li><a href="#">بلاگ ها</a></li>
+                        <li><a href="#">ساخت بلاگ</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <b>توضیحات:</b>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز...</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascript/isotope.pkgd.min.js"></script>
+    <script src="./javascript/scripts.js"></script>
+</body>
+
+</html>
