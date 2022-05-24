@@ -1,7 +1,5 @@
 $(function () {
-  $(".faq-box").on("click", function () {
-    $(this).children("div:last").toggle(".faq-answer-hidden");
-  });
+  // navbar section
 
   $(".open-menu").on("click", function () {
     $("#menu").css("right", "0");
@@ -11,9 +9,8 @@ $(function () {
     $("#menu").css("right", "-250px");
   });
 
-  $(".filter-active").on("click", function () {
-    $(".blog-box").css("display", "block");
-  });
+  // blogs section
+  // / first
 
   $("#programming").on("click", function () {
     $(".programming").css("display", "block");
@@ -33,4 +30,21 @@ $(function () {
     $(".skill").css("display", "none");
   });
 
+  // / second
+
+  $(".blog-box").on("click", function () {
+    // var blogHtml = $(this).html();
+    // $("#blog-page").html(blogHtml)
+    window.open("../blogger.html");
+  });
+
+  // faq section
+
+  $(".faq-box").on("click", function () {
+    $(this).children("div:last").toggle(".faq-answer-hidden");
+  });
+
+  $(".filter-active").on("click", function () {
+    $(".blog-box").css("display", "block");
+  });
 });

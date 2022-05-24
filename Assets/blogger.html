@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/blogger.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>blogger</title>
+    <style>
+        #blogger-blogs .selected-blog {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="blogger-header" class="padding-x">
+        <div class="wellcome">
+            <h2>پنل: کاربر شماره 1</h2>
+        </div>
+        <a href="index.html"><button class="back">بازگشت <i class="fas fa-backspace"></i></button></a>
+    </section>
+
+    <section id="blogger-blogs" class="padding-x margin-t">
+        <div class="list">
+            <div class="header">
+                <h3>لیست بلاگ ها :</h3>
+            </div>
+            <ul class="items">
+                <li><a href="#">بلاگ شماره 1</a> <span title="برنامه نویسی">موضوع بلاگ: برنامه نویسی</span></li>
+                <li><a href="#">بلاگ شماره 2</a> <span title="تکنولوژی">موضوع بلاگ: تکنولوژی</span></li>
+                <li><a href="#">بلاگ شماره 3</a> <span title="آموزش فنی">موضوع بلاگ: آموزش فنی</span></li>
+                <li><a href="#">بلاگ شماره 4</a> <span title="آموزش فنی">موضوع بلاگ: آموزش فنی</span></li>
+                <li><a href="#">بلاگ شماره 5</a> <span title="برنامه نویسی">موضوع بلاگ: برنامه نویسی</span></li>
+                <li><a href="#">بلاگ شماره 6</a> <span title="تکنولوژی">موضوع بلاگ: تکنولوژی</span></li>
+                <li><a href="#">بلاگ شماره 7</a> <span title="برنامه نویسی">موضوع بلاگ: برنامه نویسی</span></li>
+                <li><a href="#">بلاگ شماره 8</a> <span title="برنامه نویسی">موضوع بلاگ: برنامه نویسی</span></li>
+                <li><a href="#">بلاگ شماره 9</a> <span title="تکنولوژی">موضوع بلاگ: تکنولوژی</span></li>
+                <li><a href="#">بلاگ شماره 10</a> <span title="آموزش فنی">موضوع بلاگ: آموزش فنی</span></li>
+            </ul>
+
+        </div>
+        <div class="selected">
+            <div class="blog-header">
+                <h3>نام: <span style="opacity: .5;">بلاگ شماره 1</span></h3>
+                <p>موضوع بلاگ: <span>برنامه نویسی</span></p>
+            </div>
+            <div class="blog-body">
+                <p class="blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                    گرافیک
+                    است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز است.</p>
+                <div class="blog-img">
+                    <img src="./image/blog.jpg" width="100" alt="">
+                </div>
+            </div>
+            <div class="blog-footer">
+                <h3>نظرات :</h3>
+                <div id="user-comment"><span>نظری ثبت نشده است</span></div>
+                <div class="comment">
+                    <div class="comment-header">
+                        <h2>ثبت نظر</h2>
+                    </div>
+                    <div class="comment-container">
+                        <form action="#">
+                            <div class="form-box">
+                                <div class="input-box">
+                                    <div>
+                                        <label for="input-name">
+                                            نام:
+                                        </label>
+                                        <input id="input-name" name="name" type="text">
+
+                                    </div>
+                                    <div>
+                                        <label for="input-email">
+                                            ایمیل:
+                                        </label>
+                                        <input id="input-email" name="email" type="email">
+                                    </div>
+                                </div>
+                                <textarea name="comment" id="newblog-comment" rows="7"></textarea>
+                            </div>
+                            <button type="submit">ثبت نظر</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./javascript/scripts.js"></script>
+
+</body>
+
+</html>

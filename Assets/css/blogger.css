@@ -1,0 +1,231 @@
+/* / / / blogger-header section / / / */
+
+#blogger-header {
+  background-color: #212121ac;
+  color: var(--primary--color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#blogger-header .wellcome h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#blogger-header button.back {
+  padding: 5px 13px;
+  border: 1px solid transparent;
+  box-shadow: var(--boxshadow);
+  border-radius: 7px;
+  background-color: var(--primary--color);
+  transition: 300ms;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: IranSans;
+}
+
+#blogger-header button.back:hover {
+  color: var(--secondary--color);
+  border: 1px solid var(--border--hover);
+  box-shadow: var(--boxshadow--hover);
+  background-color: var(--hover);
+}
+
+/* / / / blogger-post section / / / */
+
+#blogger-blogs {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+#blogger-blogs .list {
+  flex-basis: 30%;
+  background-color: var(--secondary--color);
+  padding: 40px;
+  padding-top: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: var(--boxshadow);
+  z-index: 1;
+}
+
+#blogger-blogs .selected {
+  flex-basis: 70%;
+  border: 1px solid var(--primary--color);
+  box-shadow: var(--boxshadow);
+  z-index: 0;
+}
+
+#blogger-blogs ul.items {
+  list-style: none;
+  margin-top: 30px;
+}
+
+#blogger-blogs .header h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#blogger-blogs ul.items li {
+  padding: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#blogger-blogs ul.items li span {
+  opacity: 0.5;
+}
+
+#blogger-blogs ul.items li a {
+  text-decoration: none;
+  color: black;
+  background-color: var(--primary--color);
+  padding: 5px 13px;
+  border: 1px solid transparent;
+  box-shadow: var(--boxshadow);
+  border-radius: 7px;
+  transition: 300ms;
+  font-size: 1rem;
+  font-family: IranSans;
+}
+
+#blogger-blogs ul.items li a:hover {
+  color: var(--secondary--color);
+  border: 1px solid var(--border--hover);
+  box-shadow: var(--boxshadow--hover);
+  background-color: var(--hover);
+}
+
+#blogger-blogs .selected {
+  padding: 40px;
+  padding-top: 30px;
+}
+
+#blogger-blogs .selected .blog-header h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#blogger-blogs .selected .blog-header p {
+  font-weight: 400;
+  opacity: 0.7;
+  padding: 17px 0;
+  font-size: 1.2rem;
+}
+
+#blogger-blogs .selected .blog-body {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.294);
+}
+
+#blogger-blogs .selected .blog-body .blog-text {
+  width: 70%;
+  padding-left: 20px;
+}
+
+#blogger-blogs .selected .blog-body .blog-img {
+  width: 30%;
+}
+
+#blogger-blogs .selected .blog-body .blog-img img {
+  width: 100%;
+}
+
+#blogger-blogs .blog-footer h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  padding-bottom: 50px;
+  text-decoration: underline;
+}
+
+#blogger-blogs .blog-footer #user-comment {
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+  background-color: var(--secondary--color);
+  border-radius: 7px;
+  box-shadow: var(--boxshadow);
+  margin-bottom: 50px;
+}
+
+#blogger-blogs .blog-footer #user-comment span {
+  opacity: 0.5;
+  display: block;
+}
+
+#blogger-blogs .blog-footer h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+
+#blogger-blogs .selected form {
+  text-align: center;
+}
+
+#blogger-blogs .selected .form-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+#blogger-blogs .selected .input-box {
+  width: 50%;
+  text-align: right;
+  padding: 0 30px;
+}
+
+#blogger-blogs .selected .form-box input,
+#blogger-blogs .selected .form-box textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  box-shadow: var(--boxshadow);
+  font-size: 1rem;
+  border-radius: 7px;
+  font-family: IranSans;
+  margin: 10px 0;
+  padding: 7px;
+}
+
+#blogger-blogs .selected .form-box textarea {
+  width: 50%;
+}
+
+#blogger-blogs .selected .form-box input:focus,
+#blogger-blogs .selected .form-box textarea:focus {
+  outline: 1px solid var(--hover);
+}
+
+#blogger-blogs .selected form button {
+  width: 50%;
+  padding: 5px 13px;
+  border: 1px solid transparent;
+  box-shadow: var(--boxshadow);
+  border-radius: 7px;
+  background-color: var(--primary--color);
+  transition: 300ms;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: IranSans;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+#blogger-blogs .selected form button:hover {
+  color: var(--secondary--color);
+  box-shadow: var(--boxshadow--hover);
+  background-color: var(--hover);
+}
