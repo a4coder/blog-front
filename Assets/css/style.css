@@ -72,6 +72,26 @@ body {
   margin-top: 80px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: var(--boxshadow);
+}
+
+/* / / / / / / / / / / / / / / / / / / / / / / */
+
+@media screen and (max-width: 1127px) {
+  /* / / / blugs section / / /  */
+
+  #blogs-container .blog-box {
+    width: 48%;
+    margin: 15px auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .padding-x {
     padding-left: 10px;
@@ -205,8 +225,7 @@ body {
   }
   /* / / / footer section / / / */
   #footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
   }
 
   #footer .columns {
@@ -217,5 +236,55 @@ body {
   #footer .columns .col {
     flex-basis: 50%;
     padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+
+  /*/ / /  header section / / /*/
+
+  #hero {
+    padding: 0;
+    margin: 0;
+  }
+
+  #hero .wellcome h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  #hero .wellcome p {
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
+
+    font-size: 0.8rem;
+  }
+
+  /*/ / /  feature section / / /*/
+
+  #feature .feature-box .feature-body p {
+    padding: 5px;
+  }
+
+  /* / / / footer section / / / */
+  #footer {
+    padding: 20px;
+  }
+
+  #footer .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #footer .columns .col {
+    flex-basis: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
   }
 }

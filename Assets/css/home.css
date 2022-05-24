@@ -86,7 +86,7 @@
   background-repeat: no-repeat;
   background-position: left center;
   outline: none;
-  color: var(--secondary--color);
+  color: var(--primary--color);
   border: none;
   padding: 14px 65px 14px 65px;
   cursor: pointer;
@@ -187,7 +187,7 @@
   width: 100%;
 }
 
-#feature .feature-box .feature-body {
+#feature .feature-box .feature-body p{
   padding: 15px;
   text-align: center;
 }
@@ -278,6 +278,8 @@
   padding: 10px;
   text-align: right;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .blog-box .card-caption {
@@ -350,8 +352,8 @@
 
 #about .about-caption {
   width: 60%;
-  margin: auto;
   padding: 20px 0;
+  margin: 20px auto;
 }
 
 .about-container {
@@ -460,8 +462,8 @@ p {
 }
 
 #newblog button {
-  width: 50%;
-  padding: 13px;
+  width: 40%;
+  padding: 7px 13px;
   margin: 40px 0;
   border: 1px solid var(--border);
   box-shadow: var(--boxshadow);
@@ -483,7 +485,8 @@ p {
 #footer {
   background-color: #c3c2c1;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  margin-top: 40px;
 }
 
 #footer .columns {

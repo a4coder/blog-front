@@ -33,9 +33,7 @@ $(function () {
   // / second
 
   $(".blog-box").on("click", function () {
-    // var blogHtml = $(this).html();
-    // $("#blog-page").html(blogHtml)
-    window.open("../blogger.html");
+    window.location.href = "./blogger.html";
   });
 
   // faq section
